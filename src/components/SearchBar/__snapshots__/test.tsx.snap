@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBar renders 1`] = `
+<form
+  className="SearchBar"
+>
+  <input
+    placeholder="Search..."
+    type="text"
+  />
+  <label
+    htmlFor="onlyShowInStock"
+    style={
+      Object {
+        "display": "block",
+      }
+    }
+  >
+    <input
+      name="onlyShowInStock"
+      type="checkbox"
+    />
+    Only show products in stock
+  </label>
+</form>
+`;

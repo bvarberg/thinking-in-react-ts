@@ -4,6 +4,7 @@ exports[`FilterableProductTable with a few products renders 1`] = `
 <div
   className="FilterableProductTable"
 >
+  <SearchBar />
   <div>
     Football
   </div>
