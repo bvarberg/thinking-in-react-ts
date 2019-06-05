@@ -5,7 +5,7 @@ type Props = Readonly<{ product: Product }>
 
 export function ProductRow({ product }: Props) {
   return (
-    <tr className="ProductRow" key={product.name}>
+    <tr className="ProductRow">
       <td>{product.name}</td>
       <td>{product.price}</td>
     </tr>

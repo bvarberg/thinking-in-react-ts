@@ -1,5 +1,6 @@
 import React from "react"
 import { Product } from "../../types/Product"
+import { ProductRow } from "../ProductRow"
 
 type Props = Readonly<{ products: Product[] }>
 
@@ -12,12 +13,11 @@ export function ProductTable({ products }: Props) {
           <th>Price</th>
         </tr>
       </thead>
-      {products.map(product => (
-        <tr>
-          <td>{product.name}</td>
-          <td>{product.price}</td>
-        </tr>
-      ))}
+      <tbody>
+        {products.map(product => (
+          <ProductRow product={product} key={product.name} />
+        ))}
+      </tbody>
     </table>
   )
 }

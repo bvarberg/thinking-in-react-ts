@@ -1,5 +1,74 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[` 1`] = `
+<table
+  className="ProductTable"
+>
+  <thead>
+    <tr>
+      <th>
+        Name
+      </th>
+      <th>
+        Price
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <ProductRow
+      product={
+        Object {
+          "category": "Sporting Goods",
+          "name": "Football",
+          "price": "$49.99",
+          "stocked": true,
+        }
+      }
+    />
+    <ProductRow
+      product={
+        Object {
+          "category": "Sporting Goods",
+          "name": "Baseball",
+          "price": "$9.99",
+          "stocked": true,
+        }
+      }
+    />
+    <ProductRow
+      product={
+        Object {
+          "category": "Sporting Goods",
+          "name": "Basketball",
+          "price": "$29.99",
+          "stocked": false,
+        }
+      }
+    />
+    <ProductRow
+      product={
+        Object {
+          "category": "Electronics",
+          "name": "iPod Touch",
+          "price": "$99.99",
+          "stocked": true,
+        }
+      }
+    />
+    <ProductRow
+      product={
+        Object {
+          "category": "Electronics",
+          "name": "iPhone 5",
+          "price": "$399.99",
+          "stocked": false,
+        }
+      }
+    />
+  </tbody>
+</table>
+`;
+
 exports[`ProductTable renders 1`] = `
 <table
   className="ProductTable"
@@ -14,5 +83,6 @@ exports[`ProductTable renders 1`] = `
       </th>
     </tr>
   </thead>
+  <tbody />
 </table>
 `;
