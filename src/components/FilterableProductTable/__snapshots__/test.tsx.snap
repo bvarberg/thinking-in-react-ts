@@ -5,20 +5,41 @@ exports[`FilterableProductTable with a few products renders 1`] = `
   className="FilterableProductTable"
 >
   <SearchBar />
-  <div>
-    Football
-  </div>
-  <div>
-    Baseball
-  </div>
-  <div>
-    Basketball
-  </div>
-  <div>
-    iPod Touch
-  </div>
-  <div>
-    iPhone 5
-  </div>
+  <ProductTable
+    products={
+      Array [
+        Object {
+          "category": "Sporting Goods",
+          "name": "Football",
+          "price": "$49.99",
+          "stocked": true,
+        },
+        Object {
+          "category": "Sporting Goods",
+          "name": "Baseball",
+          "price": "$9.99",
+          "stocked": true,
+        },
+        Object {
+          "category": "Sporting Goods",
+          "name": "Basketball",
+          "price": "$29.99",
+          "stocked": false,
+        },
+        Object {
+          "category": "Electronics",
+          "name": "iPod Touch",
+          "price": "$99.99",
+          "stocked": true,
+        },
+        Object {
+          "category": "Electronics",
+          "name": "iPhone 5",
+          "price": "$399.99",
+          "stocked": false,
+        },
+      ]
+    }
+  />
 </div>
 `;
