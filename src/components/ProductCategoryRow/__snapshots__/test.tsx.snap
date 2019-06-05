@@ -5,7 +5,7 @@ exports[`ProductCategoryRow renders 1`] = `
   className="ProductCategoryRow"
 >
   <th
-    colSpan="2"
+    colSpan={2}
   >
     Sporting Goods
   </th>
