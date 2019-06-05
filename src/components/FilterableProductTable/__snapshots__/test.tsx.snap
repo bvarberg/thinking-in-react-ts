@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterableProductTable with a few products renders 1`] = `
+<div
+  className="FilterableProductTable"
+>
+  <div>
+    Football
+  </div>
+  <div>
+    Baseball
+  </div>
+  <div>
+    Basketball
+  </div>
+  <div>
+    iPod Touch
+  </div>
+  <div>
+    iPhone 5
+  </div>
+</div>
+`;
