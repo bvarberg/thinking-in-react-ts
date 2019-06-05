@@ -1,10 +1,27 @@
 import React from "react"
 import { Product } from "../../types/Product"
 import { ProductRow } from "../ProductRow"
+import { ProductCategoryRow } from "../ProductCategoryRow"
 
 type Props = Readonly<{ products: Product[] }>
 
 export function ProductTable({ products }: Props) {
+  let rows: React.ReactElement[] = []
+  let lastCategory: null | string = null
+
+  products.forEach(product => {
+    if (product.category !== lastCategory) {
+      rows.push(
+        <ProductCategoryRow
+          category={product.category}
+          key={product.category}
+        />,
+      )
+    }
+    rows.push(<ProductRow product={product} key={product.name} />)
+    lastCategory = product.category
+  })
+
   return (
     <table className="ProductTable">
       <thead>
@@ -13,11 +30,7 @@ export function ProductTable({ products }: Props) {
           <th>Price</th>
         </tr>
       </thead>
-      <tbody>
-        {products.map(product => (
-          <ProductRow product={product} key={product.name} />
-        ))}
-      </tbody>
+      <tbody>{rows}</tbody>
     </table>
   )
 }

@@ -15,6 +15,9 @@ exports[` 1`] = `
     </tr>
   </thead>
   <tbody>
+    <ProductCategoryRow
+      category="Sporting Goods"
+    />
     <ProductRow
       product={
         Object {
@@ -44,6 +47,9 @@ exports[` 1`] = `
           "stocked": false,
         }
       }
+    />
+    <ProductCategoryRow
+      category="Electronics"
     />
     <ProductRow
       product={
