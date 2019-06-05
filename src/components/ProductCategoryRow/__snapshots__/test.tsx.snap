@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductCategoryRow renders 1`] = `
+<tr
+  className="ProductCategoryRow"
+>
+  <th
+    colSpan="2"
+  >
+    Sporting Goods
+  </th>
+</tr>
+`;
