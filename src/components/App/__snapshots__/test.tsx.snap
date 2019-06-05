@@ -4,29 +4,44 @@ exports[`App renders expected structure 1`] = `
 <div
   className="App"
 >
-  <header
-    className="App-header"
-  >
-    <img
-      alt="logo"
-      className="App-logo"
-      src="logo.svg"
-    />
-    <p>
-      Edit 
-      <code>
-        src/App.tsx
-      </code>
-       and save to reload.
-    </p>
-    <a
-      className="App-link"
-      href="https://reactjs.org"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      Learn React
-    </a>
-  </header>
+  <h1>
+    Thinking in React
+  </h1>
+  <FilterableProductTable
+    products={
+      Array [
+        Object {
+          "category": "Sporting Goods",
+          "name": "Football",
+          "price": "$49.99",
+          "stocked": true,
+        },
+        Object {
+          "category": "Sporting Goods",
+          "name": "Baseball",
+          "price": "$9.99",
+          "stocked": true,
+        },
+        Object {
+          "category": "Sporting Goods",
+          "name": "Basketball",
+          "price": "$29.99",
+          "stocked": false,
+        },
+        Object {
+          "category": "Electronics",
+          "name": "iPod Touch",
+          "price": "$99.99",
+          "stocked": true,
+        },
+        Object {
+          "category": "Electronics",
+          "name": "iPhone 5",
+          "price": "$399.99",
+          "stocked": false,
+        },
+      ]
+    }
+  />
 </div>
 `;
