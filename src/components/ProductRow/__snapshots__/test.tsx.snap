@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductRow renders 1`] = `
+<tr
+  className="ProductRow"
+>
+  <td>
+    Football
+  </td>
+  <td>
+    $49.99
+  </td>
+</tr>
+`;
