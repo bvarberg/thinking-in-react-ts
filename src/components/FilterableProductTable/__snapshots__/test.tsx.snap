@@ -4,7 +4,12 @@ exports[`FilterableProductTable with a few products renders 1`] = `
 <div
   className="FilterableProductTable"
 >
-  <SearchBar />
+  <SearchBar
+    filterText=""
+    handleFilterTextChange={[Function]}
+    handleInStockOnlyChange={[Function]}
+    inStockOnly={false}
+  />
   <ProductTable
     products={
       Array [

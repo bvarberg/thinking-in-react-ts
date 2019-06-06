@@ -8,4 +8,24 @@ describe("SearchBar", () => {
 
     expect(received).toMatchSnapshot()
   })
+
+  describe("with in stock only", () => {
+    it("renders", () => {
+      const inStockOnly = true
+
+      const received = shallowRender(<SearchBar inStockOnly={inStockOnly} />)
+
+      expect(received).toMatchSnapshot()
+    })
+  })
+
+  describe("with filter text", () => {
+    it("renders", () => {
+      const filterText = "Football"
+
+      const received = shallowRender(<SearchBar filterText={filterText} />)
+
+      expect(received).toMatchSnapshot()
+    })
+  })
 })
