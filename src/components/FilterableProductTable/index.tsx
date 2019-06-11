@@ -7,24 +7,17 @@ type Props = Readonly<{
   products: Product[]
 }>
 
-/**
- * TODO: Change references to this type to the correct type.
- *
- * When I use `React.ChangeEvent` the `event.target` does not have a `checked`
- * property. I'm not sure what the correct annotation is for these event handler
- * functions.
- */
-type FIXME = any
-
 export function FilterableProductTable({ products }: Props) {
   const [filterText, setFilterText] = useState("")
-  function handleFilterTextChange(event: FIXME): void {
-    setFilterText(event.target.value)
+  function handleFilterTextChange(event: React.ChangeEvent<Element>): void {
+    const target = event.target as HTMLInputElement
+    setFilterText(target.value)
   }
 
   const [inStockOnly, setInStockOnly] = useState(false)
-  function handleInStockOnlyChange(event: FIXME): void {
-    setInStockOnly(event.target.checked)
+  function handleInStockOnlyChange(event: React.ChangeEvent<Element>): void {
+    const target = event.target as HTMLInputElement
+    setInStockOnly(target.checked)
   }
 
   const filteredProducts = products
