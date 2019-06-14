@@ -7,9 +7,10 @@ exports[`SearchBar renders 1`] = `
   <input
     placeholder="Search..."
     type="text"
+    value=""
   />
   <label
-    htmlFor="onlyShowInStock"
+    htmlFor="inStockOnly"
     style={
       Object {
         "display": "block",
@@ -17,7 +18,62 @@ exports[`SearchBar renders 1`] = `
     }
   >
     <input
-      name="onlyShowInStock"
+      checked={false}
+      name="inStockOnly"
+      type="checkbox"
+    />
+    Only show products in stock
+  </label>
+</form>
+`;
+
+exports[`SearchBar with filter text renders 1`] = `
+<form
+  className="SearchBar"
+>
+  <input
+    placeholder="Search..."
+    type="text"
+    value="Football"
+  />
+  <label
+    htmlFor="inStockOnly"
+    style={
+      Object {
+        "display": "block",
+      }
+    }
+  >
+    <input
+      checked={false}
+      name="inStockOnly"
+      type="checkbox"
+    />
+    Only show products in stock
+  </label>
+</form>
+`;
+
+exports[`SearchBar with in stock only renders 1`] = `
+<form
+  className="SearchBar"
+>
+  <input
+    placeholder="Search..."
+    type="text"
+    value=""
+  />
+  <label
+    htmlFor="inStockOnly"
+    style={
+      Object {
+        "display": "block",
+      }
+    }
+  >
+    <input
+      checked={true}
+      name="inStockOnly"
       type="checkbox"
     />
     Only show products in stock
