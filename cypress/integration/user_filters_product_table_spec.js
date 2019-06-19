@@ -8,9 +8,14 @@ describe("User filters product table", () => {
   describe("they fill in text to search for", () => {
     it("they see only products that match", function() {
       cy.visit("/")
-      cy.get("table").should("contain", "iPhone 5")
-      cy.get("input[type='text']").type("Football")
-      cy.get("table").should("not.contain", "iPhone 5")
+
+      cy.get("[data-testid='products']")
+        .should("contain", "Football")
+        .and("contain", "iPhone 5")
+      cy.get("[data-testid='search']").type("Football")
+      cy.get("[data-testid='products']")
+        .should("contain", "Football")
+        .and("not.contain", "iPhone 5")
     })
   })
 
@@ -29,9 +34,10 @@ describe("User filters product table", () => {
        * about what it tests and how it establishes its context.
        */
       cy.visit("/")
-      cy.get("table").should("contain", "iPhone 5")
-      cy.get("input[type='checkbox']").check()
-      cy.get("table").should("not.contain", "iPhone 5")
+
+      cy.get("[data-testid='products']").should("contain", "iPhone 5")
+      cy.get("[data-testid='instock-toggle']").check()
+      cy.get("[data-testid='products']").should("not.contain", "iPhone 5")
     })
   })
 })

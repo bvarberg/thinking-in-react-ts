@@ -6,6 +6,7 @@ describe("User views product table", () => {
    */
   it("they see all products", () => {
     cy.visit("/")
+    cy.get("[data-testid='products']")
     cy.get("table")
       .should("contain", "Baseball")
       .and("contain", "Basketball")
