@@ -20,6 +20,7 @@ export function SearchBar({
         placeholder="Search..."
         value={filterText}
         onChange={handleFilterTextChange}
+        data-testid="search"
       />
       <label htmlFor="inStockOnly" style={{ display: "block" }}>
         <input
@@ -27,6 +28,7 @@ export function SearchBar({
           name="inStockOnly"
           checked={inStockOnly}
           onChange={handleInStockOnlyChange}
+          data-testid="instock-toggle"
         />
         Only show products in stock
       </label>

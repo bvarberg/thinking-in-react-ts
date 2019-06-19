@@ -3,6 +3,7 @@
 exports[` 1`] = `
 <table
   className="ProductTable"
+  data-testid="products"
 >
   <thead>
     <tr>
@@ -78,6 +79,7 @@ exports[` 1`] = `
 exports[`ProductTable renders 1`] = `
 <table
   className="ProductTable"
+  data-testid="products"
 >
   <thead>
     <tr>
