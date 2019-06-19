@@ -23,7 +23,7 @@ export function ProductTable({ products }: Props) {
   })
 
   return (
-    <table className="ProductTable">
+    <table className="ProductTable" data-testid="products">
       <thead>
         <tr>
           <th>Name</th>

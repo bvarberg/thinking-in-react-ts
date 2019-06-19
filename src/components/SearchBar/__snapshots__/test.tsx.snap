@@ -5,6 +5,7 @@ exports[`SearchBar renders 1`] = `
   className="SearchBar"
 >
   <input
+    data-testid="search"
     placeholder="Search..."
     type="text"
     value=""
@@ -19,6 +20,7 @@ exports[`SearchBar renders 1`] = `
   >
     <input
       checked={false}
+      data-testid="instock-toggle"
       name="inStockOnly"
       type="checkbox"
     />
@@ -32,6 +34,7 @@ exports[`SearchBar with filter text renders 1`] = `
   className="SearchBar"
 >
   <input
+    data-testid="search"
     placeholder="Search..."
     type="text"
     value="Football"
@@ -46,6 +49,7 @@ exports[`SearchBar with filter text renders 1`] = `
   >
     <input
       checked={false}
+      data-testid="instock-toggle"
       name="inStockOnly"
       type="checkbox"
     />
@@ -59,6 +63,7 @@ exports[`SearchBar with in stock only renders 1`] = `
   className="SearchBar"
 >
   <input
+    data-testid="search"
     placeholder="Search..."
     type="text"
     value=""
@@ -73,6 +78,7 @@ exports[`SearchBar with in stock only renders 1`] = `
   >
     <input
       checked={true}
+      data-testid="instock-toggle"
       name="inStockOnly"
       type="checkbox"
     />
